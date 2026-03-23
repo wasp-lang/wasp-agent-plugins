@@ -2,9 +2,13 @@
 const fs = require('fs');
 const path = require('path');
 
+const pluginRoot = process.env.CLAUDE_PLUGIN_ROOT || path.join(__dirname, '..');
+const pluginJson = require(path.join(pluginRoot, '.claude-plugin', 'plugin.json'));
+const pluginVersion = pluginJson.version;
+
 const cwd = process.cwd();
 const waspDir = path.join(cwd, '.claude', 'wasp');
-const markerFile = path.join(waspDir, '.wasp-plugin-initialized');
+const markerFile = path.join(waspDir, `.wasp-plugin-initialized-v${pluginVersion}`);
 const optOutFile = path.join(waspDir, '.wasp-plugin-opt-out');
 const legacyOptOutFile = path.join(cwd, '.claude', 'knowledge', '.wasp-init-opt-out');
 

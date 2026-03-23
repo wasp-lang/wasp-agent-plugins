@@ -1,5 +1,3 @@
-# Wasp App
-
 This project uses Wasp, a batteries-included framework for building full-stack web apps with React, Node.js, and Prisma.
 
 ## Development Guidelines
