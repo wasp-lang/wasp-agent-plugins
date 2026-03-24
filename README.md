@@ -1,9 +1,6 @@
-# Wasp Claude Code Plugins
+# Wasp Plugins for Coding Agents
 
-> [!NOTE]
-> Although the agent skills in this repo are part of a Claude Code plugin, they can be used with other agents like Codex, Gemini, Copilot, etc. by following the instructions in the [Installation](#other-agents-codex-gemini-copilot-opencode-etc) section.
-
-Official [Claude Code](https://claude.ai/code) plugins for the [Wasp](https://wasp.sh) full-stack web framework.
+Official Wasp full-stack framework plugins for coding agents like [Claude Code](https://claude.com/product/claude-code), [Codex](https://openai.com/codex/), [Cursor](https://www.cursor.com/), [Gemini CLI](https://geminicli.com/), [Copilot](https://github.com/features/copilot/cli), [OpenCode](https://opencode.ai/), etc.
 
 ## Available Plugins
 
@@ -20,15 +17,15 @@ The main plugin that provides an optimal experience developing full-stack web ap
 To install this marketplace and browse the available Wasp plugins, run the following command:
 
 ```bash
-claude plugin marketplace add wasp-lang/claude-plugins
+claude plugin marketplace add wasp-lang/wasp-agent-plugins
 ```
 
-### Other Agents (Codex, Gemini, Copilot, OpenCode, etc.)
+### Other Agents (Cursor, Codex, Gemini, Copilot, OpenCode, etc.)
 
 To install the Wasp agent skills for other agents like Codex, Gemini, Copilot, etc., run the following command:
 
 ```bash
-npx skills add wasp-lang/claude-plugins
+npx skills add wasp-lang/wasp-agent-plugins
 ```
 
 ## Contributing

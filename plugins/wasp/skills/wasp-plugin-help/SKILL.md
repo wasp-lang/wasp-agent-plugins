@@ -56,4 +56,4 @@ The plugin ensures Claude detects your project's Wasp version and references the
 ## 🫂 Community & Contribute
 
 Join the [Wasp Discord](https://discord.gg/rzdnErX) for help and web dev discussion.
-Submit issues, feedback, or PRs: [Wasp Claude Code Plugins](https://github.com/wasp-lang/claude-plugins)
+Submit issues, feedback, or PRs: [Wasp Agent Plugins](https://github.com/wasp-lang/wasp-agent-plugins)

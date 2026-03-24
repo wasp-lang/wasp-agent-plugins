@@ -1,16 +1,13 @@
-# Wasp Claude Code Plugin
+# Wasp Plugin
 
-> [!NOTE]
-> Although the agent skills in this repo are part of a Claude Code plugin, they can be used with other agents like Codex, Gemini, Copilot, etc. by following the instructions in the [Installation](#installation) section.
-
-A Claude Code plugin that provides an optimal experience developing full-stack web apps with Wasp (React, Node.js, Prisma) through curated access to docs, workflows and best practices.
+A Wasp full-stack framework plugin for your coding agent (Claude Code, Cursor, Codex, Gemini, Copilot, OpenCode, etc.) that provides an optimal experience developing full-stack web apps with Wasp (React, Node.js, Prisma) through curated access to docs, workflows and best practices.
 
 ## Features
 
-- **Wasp documentation**: Ensures that Claude always accesses the right version of the Wasp framework documentation (in sync with your current Wasp project) at the right times, with additional enhancements (coming in the future: caching, additional knowledge from Wasp Github and Discord, ...).
+- **Wasp documentation**: Ensures that your coding agent always accesses the right version of the Wasp framework documentation (in sync with your current Wasp project) at the right times, with additional enhancements (coming in the future: caching, additional knowledge from Wasp Github and Discord, ...).
 - **Adds Wasp Knowledge**: Import Wasp best practices and conventions to your project's CLAUDE.md
 - **Configures Wasp**: Easily add Wasp framework features like authentication, database, email, styling (tailwind, shadcn), and other integrations
-- **Deployment Guidance**: Claude Code will guide you through deploying your Wasp app to Railway or Fly.io via the Wasp CLI
+- **Deployment Guidance**: Your coding agent will guide you through deploying your Wasp app to Railway or Fly.io via the Wasp CLI
 
 ## Installation
 
@@ -19,13 +16,13 @@ A Claude Code plugin that provides an optimal experience developing full-stack w
 #### Add the Wasp marketplace
 
 ```bash
-claude plugin marketplace add wasp-lang/claude-plugins
+claude plugin marketplace add wasp-lang/wasp-agent-plugins
 ```
 
 #### Install the Wasp plugin
 
 ```bash
-claude plugin install wasp@wasp-plugins --scope project
+claude plugin install wasp@wasp-agent-plugins --scope project
 ```
 
 > [!NOTE]
@@ -33,12 +30,12 @@ claude plugin install wasp@wasp-plugins --scope project
 > Or by using the `local` scope (`settings.local.json` are not commited to git).
 
 
-### Other Agents (Codex, Gemini, Copilot, OpenCode, etc.)
+### Other Agents (Codex, Cursor, Gemini, Copilot, OpenCode, etc.)
 
 Run the following command and select all the skills:
 
 ```bash
-npx skills add wasp-lang/claude-plugins
+npx skills add wasp-lang/wasp-agent-plugins
 ```
 
 ### Configure and Initialize the plugin
