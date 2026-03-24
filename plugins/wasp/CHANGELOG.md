@@ -5,6 +5,22 @@ All notable changes to the Wasp Claude Code plugin will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-03-24
+
+### Added
+- Multi-agent support: skills now work with Codex, Gemini, Copilot, OpenCode, and other agents via AGENTS.md
+- Installation path for non-Claude agents via `npx skills add wasp-lang/claude-plugins`
+- `wasp-plugin-init` skill now asks whether the user is on Claude Code (CLAUDE.md) or another agent (AGENTS.md) and follows the appropriate flow
+- Chrome DevTools MCP install instructions for non-bundled setups
+
+### Changed
+- Agent-agnostic language throughout all skills ("Claude" → "the agent")
+- Moved `general-wasp-knowledge.md` into the `wasp-plugin-init` skill directory
+- Versioned init marker files (`.wasp-plugin-initialized-v{VERSION}`) for automatic re-init on plugin upgrades
+- Simplified init detection: replaced CLAUDE.md content scanning with marker file approach
+- Moved opt-out marker from `.claude/knowledge/.wasp-init-opt-out` to `.claude/wasp/.wasp-plugin-opt-out` (legacy path still supported)
+- Chrome DevTools MCP is no longer bundled in the plugin manifest — users install it separately
+
 ## [1.2.0] - 2026-02-04
 
 ### Changed

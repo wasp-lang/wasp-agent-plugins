@@ -1,12 +1,12 @@
 {
-  "name": "wasp-plugins",
+  "name": "wasp-agent-plugins",
   "owner": {
     "name": "Wasp",
     "email": "info@wasp-lang.dev",
     "url": "https://wasp.sh"
   },
   "metadata": {
-    "description": "Official Claude Code plugins for the Wasp framework",
+    "description": "Official Wasp agent plugins for coding agents like Claude Code, Codex, Gemini, Copilot, OpenCode, etc.",
     "version": "1.0.0"
   },
   "plugins": [
@@ -14,12 +14,12 @@
       "name": "wasp",
       "source": "./plugins/wasp",
       "description": "Enhances Claude to give you an optimal experience developing full-stack web apps with Wasp (React, Node.js, Prisma), by providing curated access to docs, workflows and best practices.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚡️ QUICK START\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🧠 /wasp-plugin-init - initial setup (run this first!)\n📖 /wasp-plugin-help - view all plugin features",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": {
         "name": "Wasp"
       },
       "homepage": "https://wasp.sh",
-      "repository": "https://github.com/wasp-lang/claude-plugins",
+      "repository": "https://github.com/wasp-lang/wasp-agent-plugins",
       "license": "MIT",
       "category": "framework",
       "keywords": ["wasp", "full-stack", "react", "nodejs", "deployment", "authentication", "web-development"]
