@@ -1,6 +1,7 @@
 ---
 name: add-feature
-description: Add Wasp's built-in features to your app: auth, email, jobs, and more. These are full-stack, batteries-included features that Wasp handles for you. Use when the user wants to add meta tags, authentication (email, social auth providers), email sending, database setup, styling (tailwind, shadcn), or other Wasp-powered functionality.
+description: >-
+  Add Wasp's built-in features to your app: auth, email, jobs, and more. These are full-stack, batteries-included features that Wasp handles for you. Use when the user wants to add meta tags, authentication (email, social auth providers), email sending, database setup, styling (tailwind, shadcn), or other Wasp-powered functionality.
 ---
 
 # add-feature
