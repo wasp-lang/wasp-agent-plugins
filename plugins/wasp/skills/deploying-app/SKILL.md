@@ -13,7 +13,7 @@ description: deploy the Wasp app to Railway or Fly.io using Wasp CLI.
 
 ## Verify Deployment
 
-Open the deployed client URL. For Wasp 0.26+, verify the server returns HTTP 200 at `/up` and configure platform health checks to use that path.
+Open the deployed client URL. In Wasp 0.26+, verify the server returns HTTP 200 at `/up` and configure platform health checks to use that path.
 
 ## OAuth Redirect URLs
 

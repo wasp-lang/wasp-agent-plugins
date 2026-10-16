@@ -2,7 +2,7 @@
 
 Add and configure authentication methods for your Wasp app.
 
-For browser tests of Wasp 0.26+ managed auth forms, select email fields with `input[name="email"]`. They use `type="text"` to support internationalized addresses.
+For browser tests of managed auth forms, select email fields with `input[name="email"]`.
 
 ## Prerequisites
 

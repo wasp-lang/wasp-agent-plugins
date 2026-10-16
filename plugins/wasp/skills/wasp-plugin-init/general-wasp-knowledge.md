@@ -16,11 +16,11 @@ Always fetch and verify your knowledge against the current Wasp documentation be
 1. Run `wasp version` to get the current Wasp CLI version.
 2. Find and fetch the correct version of the Wasp documentation maps from the [LLMs.txt index](https://wasp.sh/llms.txt). The map contains raw markdown file GitHub URLs of all documentation sections.
 3. Fetch the guides relevant to the current task or query from those raw.githubusercontent.com URLs directly - do NOT use HTML page URLs.
+4. Run `wasp install` after changing the Wasp version. Follow the migration guide for the target version from the documentation map.
 
-### Wasp 0.26+
+### Compilation and Build Inspection (Wasp 0.26+)
 
 - Wasp type-checks application code during compilation. Fix reported TypeScript errors before treating a build as successful.
-- Run `wasp install` after changing the Wasp version. When upgrading from 0.25, follow the [0.26 migration guide](https://wasp.sh/docs/0.26/migration-guide), including the required `tsconfig.src.json` update.
 - Use `wasp show spec --json` to inspect the app. Use `wasp show build --json` to inspect the last build, including its version at `lastCompile.waspVersion`.
 
 ### Database Schema and Migrations
