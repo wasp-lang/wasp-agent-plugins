@@ -49,6 +49,10 @@ Note that the following env vars are auto-set by Wasp when using `wasp deploy` t
 - `JWT_SECRET`
 - `PORT`
 
+For Wasp 0.26+, custom deployments must set `PORT`. Custom Dockerfiles must also copy the generated `types` directory alongside `sdk` and `libs` (see the [migration guide](https://wasp.sh/docs/0.26/migration-guide)).
+
+When using Wasp 0.26+ deployment commands, verify Fly CLI is at least 0.4.82 or Railway CLI is at least 5.28.0, both locally and in CI. Fly database sizing flags are `--db-vm-size`, `--db-initial-cluster-size`, and `--db-volume-size`.
+
 ### Step 4: Database Migrations
 
 Check for pending migrations:

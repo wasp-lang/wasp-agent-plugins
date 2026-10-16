@@ -72,7 +72,11 @@ wasp start
 
 ### Step 5: Verify Server is Running
 
-Confirm client (`localhost:3000`) and server (`localhost:3001`) are running by checking the background task output.
+Read the client and server URLs from `wasp start` output and verify the client loads. In Wasp 0.26+, occupied ports are replaced automatically and the server health check is `/up` (HTTP 200).
+
+For Wasp 0.26+, use `--client-port` and `--server-port` to choose ports, or `--client-url` and `--server-url` for externally accessible URLs. URL overrides do not choose listening ports. Development ports and URLs are managed by Wasp, so remove `PORT`, `WASP_SERVER_URL`, and `WASP_WEB_CLIENT_URL` from `.env.server`, `REACT_APP_API_URL` from `.env.client`, and `server.port`/`server.strictPort` from Vite config. Keep deployment environment variables unchanged.
+
+Managed databases also select a free port in Wasp 0.26+. Wasp discovers it automatically. Use `wasp start db --db-port <port>` when a fixed database port is needed.
 
 **If started as background task in current session:** Listen to the output for development and debugging information.
 **If started externally:** Instruct the user to check the output of the external terminal and share its output with you.
