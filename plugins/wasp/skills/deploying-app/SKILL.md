@@ -11,6 +11,10 @@ description: deploy the Wasp app to Railway or Fly.io using Wasp CLI.
 2. Present the list of supported `wasp deploy` providers under the "Wasp Deploy" section of the docs and ask the user to choose one.
 3. Follow the steps from the chosen provider's guide to deploy the app.
 
+## Verify Deployment
+
+Open the deployed client URL. In Wasp 0.26+, verify the server returns HTTP 200 at `/up` and configure platform health checks to use that path.
+
 ## OAuth Redirect URLs
 
 If they user is using OAuth providers, inform them that they need to add the redirect URLs to the OAuth providers in the provider's dashboard.

@@ -2,6 +2,8 @@
 
 Add and configure authentication methods for your Wasp app.
 
+For browser tests of managed auth forms, select email fields with `input[name="email"]`.
+
 ## Prerequisites
 
 - Fetch the list of available authentication methods from the Wasp docs

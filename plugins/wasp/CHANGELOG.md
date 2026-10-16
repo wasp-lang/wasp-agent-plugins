@@ -5,6 +5,11 @@ All notable changes to the Wasp Claude Code plugin will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2026-10-16
+
+### Fixed
+- Updated instructions for Wasp 0.26 development URLs and ports, build inspection, migration requirements, auth selectors, and deployment health checks.
+
 ## [1.3.0] - 2026-03-24
 
 ### Added
